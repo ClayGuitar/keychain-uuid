@@ -9,9 +9,9 @@
 #import "ViewController.h"
 //导入Keychain依赖库
 #import <Security/Security.h>
-#define KEY_UUID            @"KEY_UUID"
+#define KEY_UUID            @"KEY_UUIDA"
 
-#define KEY_IN_KEYCHAIN     @"KEY_IN_KEYCHAIN"
+#define KEY_IN_KEYCHAIN     @"KEY_IN_KEYCHAINA"
 
 @interface ViewController ()
 
@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self delete:KEY_IN_KEYCHAIN];
+//    [self delete:KEY_IN_KEYCHAIN];
     id data = [self load:KEY_IN_KEYCHAIN];
     if (data == nil) {
         [self saveUDID:[self getUUID]];
@@ -95,12 +95,12 @@
 - (NSMutableDictionary *)getKeychainQuery:(NSString *)service {
     //大家可能对这么多参数都晕了，那我就给你们一一介绍，
     /*
-     kSecAttrGeneric  标识符
+     kSecAttrGeneric  标识符(此属性是可选项，但是为了能获取存取的值更精确，最好还是写上吧)
      kSecClass  是你存数据是什么格式，这里是通用密码格式
-     kSecAttrService  存的是什么服务，这个是用来到时候取的时候找到对应的服务存的值
-     kSecAttrAccount  账号，在这里作用与服务没差别
+     kSecAttrService  存的是什么服务，这个是用来到时候取的时候找到对应的服务存的值（这个属性类似于主键，kSecAttrService、kSecAttrAccount必须要赋一个值）
+     kSecAttrAccount  账号，在这里作用与服务没差别（且是否必写与kSecAttrService一样）
      */
-    return [NSMutableDictionary dictionaryWithObjectsAndKeys: (__bridge_transfer id)kSecClassGenericPassword,(__bridge_transfer id)kSecClass, service, (__bridge_transfer id)kSecAttrService, service,(__bridge_transfer id)kSecAttrAccount,  (__bridge_transfer id)kSecAttrAccessibleAfterFirstUnlock,(__bridge_transfer id)kSecAttrAccessible, nil];
+    return [NSMutableDictionary dictionaryWithObjectsAndKeys: (__bridge_transfer id)kSecClassGenericPassword, (__bridge_transfer id)kSecClass, @"com.chenglei",(__bridge_transfer id)kSecAttrGeneric, service, (__bridge_transfer id)kSecAttrService, service,(__bridge_transfer id)kSecAttrAccount,  (__bridge_transfer id)kSecAttrAccessibleAfterFirstUnlock,(__bridge_transfer id)kSecAttrAccessible, nil];
     
 }
 
