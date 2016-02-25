@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		070153221C7DBA820078A9BC /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 070153201C7DBA820078A9BC /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07F920DE1C7EFC450088E826 /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F920DD1C7EFC450088E826 /* KeychainUUID.m */; };
 		07FAF6591C7AD9D1004D6493 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FAF6581C7AD9D1004D6493 /* main.m */; };
 		07FAF65C1C7AD9D1004D6493 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FAF65B1C7AD9D1004D6493 /* AppDelegate.m */; };
 		07FAF65F1C7AD9D1004D6493 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FAF65E1C7AD9D1004D6493 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		0701531F1C7DBA820078A9BC /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		070153201C7DBA820078A9BC /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		07F920DC1C7EFC450088E826 /* KeychainUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUUID.h; sourceTree = "<group>"; };
+		07F920DD1C7EFC450088E826 /* KeychainUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainUUID.m; sourceTree = "<group>"; };
 		07FAF6541C7AD9D1004D6493 /* keychain+uuid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keychain+uuid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FAF6581C7AD9D1004D6493 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07FAF65A1C7AD9D1004D6493 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 			children = (
 				07FAF65A1C7AD9D1004D6493 /* AppDelegate.h */,
 				07FAF65B1C7AD9D1004D6493 /* AppDelegate.m */,
+				07F920DC1C7EFC450088E826 /* KeychainUUID.h */,
+				07F920DD1C7EFC450088E826 /* KeychainUUID.m */,
 				07FAF65D1C7AD9D1004D6493 /* ViewController.h */,
 				07FAF65E1C7AD9D1004D6493 /* ViewController.m */,
 				0701531F1C7DBA820078A9BC /* KeychainItemWrapper.h */,
@@ -279,6 +284,7 @@
 				07FAF65F1C7AD9D1004D6493 /* ViewController.m in Sources */,
 				07FAF65C1C7AD9D1004D6493 /* AppDelegate.m in Sources */,
 				07FAF6591C7AD9D1004D6493 /* main.m in Sources */,
+				07F920DE1C7EFC450088E826 /* KeychainUUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
