@@ -31,9 +31,6 @@
     
 //    [self delete:KEY_IN_KEYCHAIN];
     
-    fsdfdsfds 
-    
-    
     KeychainUUID *keychain = [[KeychainUUID alloc] init];
     id data = [keychain readUDID];
     NSLog(@"data = %@",data);

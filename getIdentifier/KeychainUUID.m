@@ -84,8 +84,9 @@
      kSecAttrService  存的是什么服务，这个是用来到时候取的时候找到对应的服务存的值（这个属性类似于主键，kSecAttrService、kSecAttrAccount必须要赋一个值）
      kSecAttrAccount  账号，在这里作用与服务没差别（且是否必写与kSecAttrService一样）
      当你有服务或者账号则必须有密码
+     kSecAttrAccessible  安全性
      */
-    return [NSMutableDictionary dictionaryWithObjectsAndKeys: (__bridge_transfer id)kSecClassGenericPassword, (__bridge_transfer id)kSecClass, @"com.chenglei",(__bridge_transfer id)kSecAttrGeneric, service, (__bridge_transfer id)kSecAttrService, service,(__bridge_transfer id)kSecAttrAccount,  (__bridge_transfer id)kSecAttrAccessibleAfterFirstUnlock,(__bridge_transfer id)kSecAttrAccessible, nil];
+    return [NSMutableDictionary dictionaryWithObjectsAndKeys: (__bridge_transfer id)kSecClassGenericPassword, (__bridge_transfer id)kSecClass, @"com.chenglei",(__bridge_transfer id)kSecAttrGeneric, service, (__bridge_transfer id)kSecAttrService, service,(__bridge_transfer id)kSecAttrAccount,  (__bridge_transfer id)kSecAttrAccessibleAlways,(__bridge_transfer id)kSecAttrAccessible, nil];
     
 }
 
