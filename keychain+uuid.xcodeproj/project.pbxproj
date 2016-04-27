@@ -109,6 +109,8 @@
 			children = (
 				07FAF65A1C7AD9D1004D6493 /* AppDelegate.h */,
 				07FAF65B1C7AD9D1004D6493 /* AppDelegate.m */,
+				07F920DC1C7EFC450088E826 /* KeychainUUID.h */,
+				07F920DD1C7EFC450088E826 /* KeychainUUID.m */,
 				07FAF65D1C7AD9D1004D6493 /* ViewController.h */,
 				07FAF65E1C7AD9D1004D6493 /* ViewController.m */,
 				0701531F1C7DBA820078A9BC /* KeychainItemWrapper.h */,
@@ -118,8 +120,6 @@
 				07FAF6651C7AD9D1004D6493 /* LaunchScreen.storyboard */,
 				07FAF6681C7AD9D1004D6493 /* Info.plist */,
 				07FAF6571C7AD9D1004D6493 /* Supporting Files */,
-				07F920DC1C7EFC450088E826 /* KeychainUUID.h */,
-				07F920DD1C7EFC450088E826 /* KeychainUUID.m */,
 			);
 			path = getIdentifier;
 			sourceTree = "<group>";
